@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints a combination of two numbers
- * Return: 0
+ * main - print a combination of two numbers
+ * Return:0
  */
 int main(void)
 {
@@ -13,9 +13,9 @@ int main(void)
 		{
 			if (firstnumber != secondnumber && firstnumber < secondnumber)
 			{
-				putchar('0' +  firstnumber);
+				putchar('0' + firstnumber);
 				putchar('0' + secondnumber);
-				if (firstnumber == 8 && secondnumber ==9)
+				if (firstnumber == 8 && secondnumber == 9)
 				{
 					continue;
 				}
