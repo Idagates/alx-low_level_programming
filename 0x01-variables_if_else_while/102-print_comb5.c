@@ -5,30 +5,27 @@
  */
 int main(void)
 {
-int firstnumber, secondnumber, thirdnumber, fourthnumber;
+	int num1, num2;
 
-for (firstnumber = 0 ; firstnumber <= 9; firstnumber++)
-{
-for (secondnumber = 0 ; secondnumber <= 9; secondnumber++)
-{
-for (thirdnumber = 0 ; thirdnumber <= 9; thirdnumber++)
-{
-for (fourthnumber = 0 ; fourthnumber <= 9; fourthnumber++)
-{
-if (firstnumber != (secondnumber && thirdnumber && fourthnumber))
-{
-putchar(firstnumber + '0');
-putchar(secondnumber + '0');
-putchar(' ');
-putchar(thirdnumber + '0');
-putchar(fourthnumber + '0');
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
+	for (num1 = 0; num1 <= 98; num1++)
+	{
+		for (num2 = num1 + 1; num2 <= 99; num2++)
+		{
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
